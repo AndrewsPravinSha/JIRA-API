@@ -17,7 +17,7 @@ public class JIRAdelete extends BaseClassAPI{
 		  .preemptive()
 		  .basic(excelRead("JIRA-API", 1, 0),excelRead("JIRA-API", 1, 1))
 		 .when()
-		  .delete("/rest/api/3/issue/PBI-5/delete");
+		  .delete("/rest/api/3/issue/PBI-5");
 		 
 		
 		System.out.println("Status code: " + response.statusCode());
